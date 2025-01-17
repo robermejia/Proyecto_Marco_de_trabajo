@@ -13,3 +13,19 @@ const cambiarTema = () => {
     }
     //console.log(document.documentElement.dataset.bsTheme);
 };
+
+// Example validation - replace with your actual validation logic
+function validateEmail(input) {
+    const email = input.value;
+    if (email.includes('@') && email.indexOf('@') !== email.lastIndexOf('@') ) {
+        input.classList.remove('is-invalid');
+        input.classList.add('is-valid');
+    } else if (email.includes('@') && email.split('@')[1].length > 0 ) {
+        input.classList.remove('is-invalid');
+        input.classList.add('is-valid');
+
+    } else {
+        input.classList.remove('is-valid');
+        input.classList.add('is-invalid');
+    }
+}
