@@ -1,3 +1,4 @@
+//Modo dark
 let themeDark = false;
 let btnTema = document.getElementById("btnTema");
 const cambiarTema = () => {
@@ -14,7 +15,7 @@ const cambiarTema = () => {
     //console.log(document.documentElement.dataset.bsTheme);
 };
 
-// Example validation - replace with your actual validation logic
+// Código login
 function validateEmail(input) {
     const email = input.value;
     if (email.includes('@') && email.indexOf('@') !== email.lastIndexOf('@') ) {
